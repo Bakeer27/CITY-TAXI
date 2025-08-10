@@ -1,0 +1,438 @@
+/* styles.css */
+
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#FFFFFF;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0F172B; /* Change this to your desired brand color */
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #FEAF39;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #FFFEFE !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #FEA116 !important; /* Highlight color on hover */
+}
+
+.nav-item.btn-lst .btn-custom {
+    background-color: #021217;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item.btn-lst .btn-custom:hover {
+    background-color: #ffdd57;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.navbar .dropdown-menu {
+    background-color: #007bff;
+    border: none;
+}
+
+.navbar .dropdown-item {
+    color: #fff;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #ffc107;
+    color: #333;
+}
+
+/* Mobile Navbar */
+.navbar-toggler {
+    border: none;
+    color: #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #0056b3;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* Jumbotron Styling */
+.jumbotron {
+    background-image: url('./img/taxi-bg.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Adding a subtle overlay for better text readability */
+
+
+/* Jumbotron Styling */
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#FFFFFF;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    background-image: url('./img/taxi-bg.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem; /* Increased padding for higher background */
+    min-height: 500px; /* Set a minimum height */
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Adding a subtle overlay for better text readability */
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.jumbotron .jumbotron-content {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: #fff;
+    font-size: 2.5rem; /* Adjust font size as needed */
+}
+
+.jumbotron h1 {
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.sub-bg {
+    background-color: rgba(255, 255, 255, 0.8); /* Subtle background for the section below */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Info Block Styling */
+.info-block {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 250px; /* Set equal height for all blocks */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info-block h3 {
+    font-size: 1.5rem;
+    color: #031416;
+    margin-bottom: 1rem;
+}
+
+.info-block p {
+    color: #6c757d;
+}
+
+.info-block .icon {
+    font-size: 3rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+/* Different Background Colors for Each Block */
+.register-block {
+    background-color: #e9f7fd;
+}
+
+.book-block {
+    background-color: #fdecea;
+}
+
+.pay-block {
+    background-color: #f9eaea;
+}
+
+/* Make sure all blocks have the same height and width */
+.container .row > div {
+    display: flex;
+    justify-content: center;
+}
+
+.info-block {
+    width: 100%; /* Make blocks take up equal width */
+    max-width: 350px; /* Set a max-width to maintain consistency */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .info-block {
+        margin-bottom: 1.5rem;
+        max-width: 100%; /* For smaller screens, allow full-width blocks */
+    }
+}
+/* Main container and form styling */
+.container {
+    max-width: 900px;
+    margin-top: 50px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+/* Place picker styling */
+.place-picker-container {
+    margin-bottom: 20px;
+}
+
+#gmpx-place-picker {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Total distance and amount styling */
+#totalDistance, #totalAmount {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #007bff;
+}
+
+#totalAmount {
+    color: #ff5a00;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Button styling */
+.btn-clr {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-clr:hover {
+    background-color: #218838;
+}
+
+.alert {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .btn-clr {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+/*** Team ***/
+.team-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    height: calc(100% - 38px);
+    transition: .5s;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+}
+
+.team-item:hover {
+    height: 100%;
+}
+
+.team-item .btn {
+    border-radius: 38px 38px 0 0;
+}
+/* Custom Button Colors */
+.btn-clrout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-clrout:hover {
+    background-color: #0056b3;
+    color: white;
+}
+ /* Custom Button Colors */
+ .btn-clrout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-clrout:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.icon {
+    margin-right: 8px;
+}
+/* Team Member Styling */
+.team-member {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Optional: Add styles for team member images */
+.team-member img {
+    max-width: 100%; /* Responsive images */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Adjust team member titles */
+.team-member h5 {
+    color: #007bff; /* Use your brand color */
+}
+
+/* Adjust team member descriptions */
+.team-member small {
+    color: #6c757d; /* Gray color for descriptions */
+}
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Centered text */
+    position: relative; /* Ensure it positions correctly */
+    bottom: 0; /* Aligns footer to the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size */
+}
+
+/* Optional: Add hover effect for the text */
+footer p:hover {
+    color: #007bff; /* Change text color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+/* Add this to your styles.css file */
+
+/* Background image for the login page */
+.bg-main {
+    background-image: url('./img/taxi-bg.webp'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    min-height: 100vh; /* Full viewport height */
+}
+.bg-main {
+    position: relative; /* Needed for the pseudo-element */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.bg-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Below the content */
+}
+
+.container {
+    position: relative; /* To place content above the overlay */
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+.card {
+    border-radius: 15px; /* Keep rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
