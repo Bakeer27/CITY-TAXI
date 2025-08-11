@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php endif; ?>
             </div>
             <form action="booking.php" method="POST">
-                <gmpx-api-loader key="AIzaSyCrTqJOEyNjvKHmYhVxOTtlH7FcTFBYfUA" solution-channel="GMP_GE_mapsandplacesautocomplete_v1"></gmpx-api-loader>
+                <gmpx-api-loader key="#your API Key" solution-channel="GMP_GE_mapsandplacesautocomplete_v1"></gmpx-api-loader>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 place-picker-container">
@@ -96,3 +96,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
 </main>
 <?php include './include/footer.php'; ?>
+
